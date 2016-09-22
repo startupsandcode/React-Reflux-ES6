@@ -1,12 +1,18 @@
 import expect from 'expect';
 import React from 'react';
+import Immutable from 'immutable';
 import {mount, shallow} from 'enzyme';
 import TestUtils from 'react-addons-test-utils';
 import HomeForm from '../../src/views/home/components/homePage.jsx';
 
 function setup() {
-     const props = {
-        title: 'HomePage Stuff'
+    const props = {
+        sharedStore: Immutable.Map({
+            title: 'HomePage Stuff'
+        }),
+        homeStore: Immutable.Map({
+            firstName: 'John'
+        })
     };
     return shallow(<HomeForm {...props} />);
 }
