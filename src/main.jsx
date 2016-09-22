@@ -38,4 +38,4 @@ let rootRoute = {
     ]
 }
 
-render(<Router routes={rootRoute} />, document.getElementById('app'));
+render(<Router history={appHistory} routes={rootRoute} />, document.getElementById('app'));
