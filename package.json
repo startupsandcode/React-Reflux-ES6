@@ -4,8 +4,9 @@
   "description": "A Boilerplate for React, Reflux, and Enzyme",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all index lessIt package",
-    "package": "webpack --config webpackDev.config.js --watch",
+    "start": "npm-run-all index lessIt package server",
+    "package": "start webpack --config webpackDev.config.js --watch",
+    "server": "cd dist && start http://localhost:8080 && http-server",
     "index": "node shared.js",
     "lessIt": "lessc ./src/less/site.less ./dist/css/site.css",
     "copy:index.html": "copyfiles -u 1 src/index.html src/images/* dist",
@@ -33,7 +34,7 @@
     "webpack": "^2.1.0-beta.24"
   },
   "dependencies": {
-    "history": "^4.2.0",
+    "history": "^2.0.1",
     "immutable": "^3.8.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
