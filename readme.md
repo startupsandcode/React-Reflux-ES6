@@ -1,4 +1,4 @@
-#Boilerplate for React/Redux/Enzyme
+#Boilerplate for React/Reflux/Enzyme
 
 ##Steps to create:
 1. Create GitHub (clone from BoilerPlate)
