@@ -3,3 +3,4 @@ dist/**/*
 database.rules.json
 firebase.json
 .firebaserc
+package-lock.json

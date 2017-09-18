@@ -1,6 +1,14 @@
 #Boilerplate for React/Reflux/Enzyme
 
-##Steps to create:
+##Steps to run:
+1. Clone the repo (git clone https://github.com/lotekmedia/React-Reflux-ES6)
+2. cd React-Reflux-ES6
+3. npm i
+4. npm start
+
+### Tada! Magic
+
+##Steps to create from scratch:
 1. Create GitHub (clone from BoilerPlate)
 2. Create .gitignore
 3. npm init
